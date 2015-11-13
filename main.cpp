@@ -1,15 +1,24 @@
 #include <iostream>
+#include "Piece.h"
+#include "Queen.h"
+#include "Helpers.cpp"
 
-using namespace std;
+
 
 int main() {
 
     auto str = "abc";
-//    int count = 1;
     auto a = 1;
-    auto ptr = &a;
-    a++;
+    auto reference = &a;
+    auto funcPrintNum = printNum;
+
+    auto piece1 = new Piece();
+    auto queen1 = new Queen();
+
     std::cout << str << std::endl;
     std::cout << a << std::endl;
+    std::cout << reference << std::endl;
+
+    funcPrintNum(10);
     return 0;
 }
