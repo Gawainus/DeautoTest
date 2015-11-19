@@ -7,18 +7,19 @@
 
 int main() {
 
-    auto str = "abc";
-    auto a = 1;
-    auto reference = &a;
-    auto funcPrintNum = printNum;
+    const char * str = "abc";
+    int a = 1;
+    int * reference = &a;
 
-    auto piece1 = new Piece();
-    auto queen1 = new Queen();
+    class Piece * piece1 = new Piece();
+    class Queen * queen1 = new Queen();
 
     std::cout << str << std::endl;
     std::cout << a << std::endl;
     std::cout << reference << std::endl;
+    std::cout << piece1 << std::endl;
+    std::cout << queen1 << std::endl;
 
-    funcPrintNum(10);
+    // funcPrintNum(10);
     return 0;
 }
