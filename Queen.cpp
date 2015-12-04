@@ -3,3 +3,8 @@
 //
 
 #include "Queen.h"
+
+bool Queen::leagalToMove(int xLoc, int yLoc) {
+
+    return xLoc == yLoc;
+}

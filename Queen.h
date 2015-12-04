@@ -10,6 +10,13 @@
 
 class Queen : Piece {
 
+public:
+    virtual bool leagalToMove(int xLoc, int yLoc);
+
+
+protected:
+
+
 };
 
 

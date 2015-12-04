@@ -11,15 +11,24 @@ int main() {
     int a = 1;
     int * reference = &a;
 
-    class Piece * piece1 = new Piece();
+    auto funcPrintNum = printNum;
+    auto funcStrCmp = stringCompare;
+
     class Queen * queen1 = new Queen();
+
+    auto funcMoveQueen = queen1->leagalToMove(0, 1);
 
     std::cout << str << std::endl;
     std::cout << a << std::endl;
     std::cout << reference << std::endl;
-    std::cout << piece1 << std::endl;
     std::cout << queen1 << std::endl;
 
-    // funcPrintNum(10);
+
+
+    funcStrCmp("A", "B");
+    funcPrintNum(10);
+
+
+
     return 0;
 }

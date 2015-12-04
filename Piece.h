@@ -7,11 +7,15 @@
 
 
 class Piece {
+
 public:
 
+
 protected:
-    int xLoc;
-    int yLoc;
+    int m_xLoc;
+    int m_yLoc;
+
+    virtual bool leagalToMove(int xLoc, int yLoc) = 0;
 
 };
 
