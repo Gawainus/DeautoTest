@@ -3,6 +3,6 @@ project(DeautoTest)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
 
-set(SOURCE_FILES main.cpp Piece.cpp Piece.h Queen.cpp Queen.h)
+set(SOURCE_FILES main.cpp Piece.cpp Piece.h Queen.cpp Queen.h TestConainers.cpp)
 
 add_executable(DeautoTest ${SOURCE_FILES})
